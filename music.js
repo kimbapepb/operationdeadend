@@ -19,7 +19,7 @@ const phoneMusic = (() => {
     return Math.floor(value / 60) + ':' + String(value % 60).padStart(2, '0');
   };
   const cover = track => '<span class="music-cover cover-' + track.cover + '"><span aria-hidden="true">♫</span>'
-    + '<img alt="" src="' + path('OST ' + track.cover + '.PNG') + '" onerror="this.remove()"></span>';
+    + '<img alt="" src="' + path('OST ' + track.cover + '.png') + '" onerror="this.remove()"></span>';
 
   function update() {
     if (!view?.isConnected) return;
